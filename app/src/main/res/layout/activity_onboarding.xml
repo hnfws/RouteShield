@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calm_bg"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Header Back Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_back_button"
+                android:text="←"
+                android:textColor="@color/calm_text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Kenali Profil Stres Anda"
+                android:textColor="@color/calm_text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Pertanyaan A -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="A. Seberapa sering Anda berolahraga?"
+            android:textColor="@color/calm_accent"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rbRarely"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/calm_surface"
+                android:padding="12dp"
+                android:text="Jarang / Rebahan (Batas HR 95 BPM)"
+                android:textColor="@color/calm_text_primary" />
+
+            <RadioButton
+                android:id="@+id/rbModerateEx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/calm_surface"
+                android:checked="true"
+                android:padding="12dp"
+                android:text="Cukup Aktif (2-4x seminggu) (Batas HR 108 BPM)"
+                android:textColor="@color/calm_text_primary" />
+
+            <RadioButton
+                android:id="@+id/rbAthlete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/calm_surface"
+                android:padding="12dp"
+                android:text="Atlet / Sangat Rutin (Batas HR 120 BPM)"
+                android:textColor="@color/calm_text_primary" />
+        </RadioGroup>
+
+        <!-- Pertanyaan B -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="B. Suara apa yang paling memicu pusing/lelah?"
+            android:textColor="@color/calm_accent"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgTrigger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rbTraffic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/calm_surface"
+                android:checked="true"
+                android:padding="12dp"
+                android:text="Lalu Lintas &amp; Klakson (Batas 75 dB)"
+                android:textColor="@color/calm_text_primary" />
+
+            <RadioButton
+                android:id="@+id/rbCrowd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/calm_surface"
+                android:padding="12dp"
+                android:text="Kerumunan Orang (Batas 68 dB)"
+                android:textColor="@color/calm_text_primary" />
+
+            <RadioButton
+                android:id="@+id/rbConstruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/calm_surface"
+                android:padding="12dp"
+                android:text="Konstruksi / Mesin (Batas 80 dB)"
+                android:textColor="@color/calm_text_primary" />
+        </RadioGroup>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="24dp"
+            android:max="100"
+            android:progress="100"
+            android:progressTint="@color/calm_accent" />
+
+        <Button
+            android:id="@+id/btnSaveOnboarding"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/calm_accent"
+            android:text="Simpan Profil &amp; Mulai"
+            android:textColor="@color/calm_bg"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Background & Surface (Gelap & Tenang) -->
+    <color name="calm_bg">#121619</color>
+    <color name="calm_surface">#1C2226</color>
+    <color name="calm_surface_variant">#262E34</color>
+
+    <!-- Accent / Primary Color (Ditingkatkan ke #82C4B0 untuk rasio kontras > 7:1 di latar belakang gelap) -->
+    <color name="calm_accent">#82C4B0</color>
+    <color name="calm_accent_soft">#243A35</color>
+
+    <!-- Text Colors (WCAG AAA Compliant) -->
+    <color name="calm_text_primary">#F4F8FA</color>
+    <color name="calm_text_secondary">#B0BEC5</color>
+
+    <!-- Warning & Danger (Peringatan & Bahaya dengan kontras tinggi) -->
+    <color name="calm_warning">#E6B072</color>
+    <color name="calm_danger">#E57373</color>
+
+    <!-- Border Color -->
+    <color name="calm_border">#2E373E</color>
 </resources>

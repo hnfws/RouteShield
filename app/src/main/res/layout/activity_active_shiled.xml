@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calm_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Banner Status Shield Aktif -->
+    <TextView
+        android:id="@+id/tvActiveBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/calm_surface"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="Shield Aktif: Brown Noise\nSedang Diputar (Spotify)"
+        android:textColor="@color/calm_text_primary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Visual Calming Orb -->
+    <FrameLayout
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/calm_accent_soft">
+
+        <TextView
+            android:id="@+id/tvOrbReadout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="PERISAI TENANG\n64 dB • 78 BPM"
+            android:textColor="@color/calm_accent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Kartu Navigasi Belokan Tenang -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/calm_surface"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="↰"
+            android:textColor="@color/calm_accent"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTurnInstruction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:text="Belok Kiri 150m\nmenuju Jl. Anggrek (Rute Tenang)"
+            android:textColor="@color/calm_text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Kontrol Mini Player Spotify -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/calm_surface_variant"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvTrackTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Brown Noise - Calm"
+            android:textColor="@color/calm_text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnPlayPauseAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/calm_accent"
+            android:text="Pause"
+            android:textColor="@color/calm_bg"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnStopShield"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/calm_danger"
+            android:text="Selesai"
+            android:textColor="@color/calm_text_primary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

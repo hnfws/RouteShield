@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calm_bg"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Header Back Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_back_button"
+                android:text="←"
+                android:textColor="@color/calm_text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Detail Titik Zona Bising"
+                android:textColor="@color/calm_text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/calm_surface"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/tvDetailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: -"
+                android:textColor="@color/calm_text_secondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvDetailLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Memuat lokasi..."
+                android:textColor="@color/calm_text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDetailNoise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Intensitas Suara: -"
+                android:textColor="@color/calm_warning"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDetailCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Kategori: -"
+                android:textColor="@color/calm_text_primary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvDetailCoords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Koordinat GPS: -"
+                android:textColor="@color/calm_text_secondary"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Tombol PATCH (Ubah sebagian: update dB saja) -->
+        <Button
+            android:id="@+id/btnPatchNoise"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/calm_accent"
+            android:text="Update Level dB Saja (PATCH)"
+            android:textColor="@color/calm_bg"
+            android:textStyle="bold" />
+
+        <!-- Tombol PUT (Edit seluruh data) -->
+        <Button
+            android:id="@+id/btnEditPut"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/calm_surface_variant"
+            android:text="Edit Seluruh Laporan (PUT)"
+            android:textColor="@color/calm_text_primary" />
+
+        <!-- Tombol DELETE (Hapus laporan) -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/calm_danger"
+            android:text="Hapus Titik Bising (DELETE)"
+            android:textColor="@color/calm_text_primary" />
+
+    </LinearLayout>
+</ScrollView>
